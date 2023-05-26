@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js",
-    "./node_modules/flowbite-react/**/*.js",
+    "app/**/*.{js,ts,jsx,tsx,mdx}",
+    "layout/**/*.{js,ts,jsx,tsx,mdx}",
+    "pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "components/**/*.{js,ts,jsx,tsx,mdx}",
+    "node_modules/flowbite/**/*.js",
+    "node_modules/flowbite-react/**/*.js",
   ],
   theme: {
     screens: {
@@ -34,8 +36,9 @@ module.exports = {
     },
     extend: {
       spacing: {
-        '128': '32rem',
-        '144': '36rem',
+        // '16': '4rem',
+        // '128': '32rem',
+        // '144': '36rem',
       },
       borderRadius: {
         '4xl': '2rem',

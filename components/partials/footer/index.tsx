@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PageFooter() {
   return (
-    <div className="page-footer fixed bottom-0 min-w-full dark:bg-main-navbar bg-main-navbar h-8">
+    <div className="page-footer fixed min-w-full bottom-0 dark:bg-main-navbar bg-main-navbar h-8">
       <hr></hr>
       <div className="m-1 flex justify-center flex-wrap mr-2 space-x-2">
         <span> copyright </span>
