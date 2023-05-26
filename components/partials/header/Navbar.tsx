@@ -4,7 +4,7 @@ import Config from "./Config";
 export default function Navbar() {
   return (
     <nav className="border-blue-300 px-2 sm:px-4 py-2 bg-main-navbar flex flex-row flex-wrap w-full">
-      <div className="container flex flex-wrap items-center justify-between min-w-full">
+      <div className="container flex flex-wrap items-center justify-between min-w-full m-2">
         <Link href='/homepage'>
           <div className='inline-flex items-center p-2'>
             <svg
