@@ -24,3 +24,30 @@ a {
       @apply dark:bg-gray-800 bg-white
   }
 }
+
+@layer components {
+  .page-header {
+    position: fixed;
+    min-width: theme('minWidth.full');
+    height: theme('height.16');
+  }
+  .page-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)), theme('backgroundImage.theme-bg');
+    position: fixed;
+    min-width: theme('minWidth.full');
+    top: theme('spacing.16');
+    bottom: theme('spacing.8');
+    height: calc(100vh - theme('spacing.24'));
+    overflow: auto;
+    padding-top: theme('spacing.1');
+    padding-bottom: theme('spacing.1');
+  }
+  .page-footer {
+    position: fixed;
+    min-width: theme('minWidth.full');
+    bottom: 0;
+    height: theme('height.8');
+    @apply dark:bg-main-navbar bg-main-navbar;
+  }
+}
+

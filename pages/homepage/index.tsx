@@ -1,25 +1,12 @@
-import ListAnime from "components/body/listAnime";
+import PageContent from "components/contents";
 import Loading from "components/Loading";
+import {AnimeList} from "type/anime";
 
-type Anime = {
-  id: number;
-  title: string;
-  imgDomain: string;
-  imgSrc: string;
-  votes: number;
-  rankings: number;
-  description: string;
-};
-
-type AnimeList = {
-  isLoading: boolean;
-  data: Anime[];
-};
 
 export default function Homepage(animeList: AnimeList) {
   return (
-    <div className="homepage md:h-fit flex flex-wrap justify-center align-middle pt-2">
-      {animeList.isLoading ? <Loading /> : <ListAnime isLoading={animeList.isLoading} data={animeList.data} />}
+    <div className="homepage md:h-fit flex flex-wrap justify-center align-middle">
+      {animeList.isLoading ? <Loading /> : <PageContent isLoading={animeList.isLoading} data={animeList.data} />}
     </div>
   );
 }

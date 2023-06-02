@@ -30,6 +30,9 @@ module.exports = {
       // 'bubble-gum': '#ff77e9',
       // 'bermuda': '#78dcca',
     },
+    backgroundImage: {
+      'theme-bg': "url('/img/background.jpeg')"
+    },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
@@ -49,7 +52,7 @@ module.exports = {
     }
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
   ],
   darkMode: 'class'
 };

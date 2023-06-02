@@ -2,12 +2,10 @@ import PageHeader from "components/partials/header";
 import PageFooter from "components/partials/footer";
 import SpeedDial from "components/SpeedDial";
 import Head from "next/head";
+import PageBody from "components/partials/body";
+import {NodeProps} from "type/layout";
 
-type Props = {
-  children: React.ReactNode;
-};
-
-export default function DefaultLayout({children}: Props) {
+export default function DefaultLayout(props: NodeProps) {
   return (
     <>
       <Head>
@@ -18,10 +16,10 @@ export default function DefaultLayout({children}: Props) {
         <meta name="robots" content="noindex" />
         <meta name="googlebot" content="noindex" />
       </Head>
-      <div className="relative">
+      <div>
         <PageHeader />
         <SpeedDial />
-        <div className="page-body fixed min-w-full top-16 bottom-16 h-[calc(100vh-theme(spacing.16))] overflow-auto">{children}</div>
+        <PageBody>{props.children}</PageBody>
         <PageFooter />
       </div>
     </>
